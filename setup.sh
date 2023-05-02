@@ -16,6 +16,7 @@ IZIN=$( curl https://raw.githubusercontent.com/rioxy/client/main/ipvps | grep $M
 if [ $MYIP = $IZIN ]; then
 sleep 2
 echo -e "${green}Akses Diterima...${NC}"
+sleep 5
 else
 sleep 2
 echo -e "${red}Akses Ditolak...${NC}"
@@ -52,7 +53,7 @@ mkdir /usr/local/etc/v2ray/clients
 echo -e"v2ray terinstall"
 sleep 2
 clear
-echo -e "Persiapan instalasi"
+echo -e "instalasi ssl"
 read -p "Domain / subdomain: " domain
 sleep 2
 read -p "email:" email
